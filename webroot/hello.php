@@ -28,3 +28,4 @@ EOD;
  
 // Finally, leave it all to the rendering phase of glosoli.
 include(glosoli_THEME_PATH);
+?>

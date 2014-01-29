@@ -19,3 +19,5 @@ header("HTTP/1.0 404 Not Found");
  
 // Finally, leave it all to the rendering phase of glosoli.
 include(glosoli_THEME_PATH);
+
+?>

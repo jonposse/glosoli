@@ -69,3 +69,5 @@ $glosoli['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.j
  */
 $glosoli['javascript_include'] = array();
 //$glosoli['javascript_include'] = array('js/main.js'); // To add extra javascript files
+
+?>
