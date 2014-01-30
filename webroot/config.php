@@ -17,15 +17,15 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
  * Define glosoli paths.
  *
  */
-define('glosoli_INSTALL_PATH', __DIR__ . '/..');
-define('glosoli_THEME_PATH', glosoli_INSTALL_PATH . '/theme/render.php');
+define('GLOSOLI_INSTALL_PATH', __DIR__ . '/..');
+define('GLOSOLI_THEME_PATH', GLOSOLI_INSTALL_PATH . '/theme/render.php');
  
  
 /**
  * Include bootstrapping functions.
  *
  */
-include(glosoli_INSTALL_PATH . '/src/bootstrap.php');
+include(GLOSOLI_INSTALL_PATH . '/src/bootstrap.php');
  
  
 /**
@@ -42,32 +42,16 @@ session_start();
  */
 $glosoli = array();
  
- 
 /**
  * Site wide settings.
  *
  */
 $glosoli['lang']         = 'sv';
-$glosoli['title_append'] = ' | glosoli en webbtemplate';
+$glosoli['title_append'] = ' | en webbtemplate';
 
 /**
- * Settings for JavaScript.
+ * Theme related settings.
  *
  */
-$glosoli['modernizr'] = 'js/modernizr.js';
-
-/**
- * Settings for JavaScript.
- *
- */
-$glosoli['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
-//$glosoli['jquery'] = null; // To disable jQuery
-
-/**
- * Settings for JavaScript.
- *
- */
-$glosoli['javascript_include'] = array();
-//$glosoli['javascript_include'] = array('js/main.js'); // To add extra javascript files
-
-?>
+$glosoli['stylesheets'] = array('css/style.css');
+$glosoli['favicon']    = 'img/favicon.ico';

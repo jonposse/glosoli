@@ -11,8 +11,16 @@ body {
  */
 #wrapper {
   margin: 0 auto;
-  width: 980px; 
-  padding: 10px;
+  width: 800px; 
+  min-height:900px;
+  padding: 20px;
+  
+  border-right-width: 1px solid #999;
+  border-left-width: 1px solid #999;
+  box-shadow: 0px 0px 10px #999999;
+  moz-box-shadow: 0px 0px 10px #999999;
+  webkit-box-shadow: 0px 0px 10px #999999;
+  background-color:#FFFEF2;
 }
  
  
@@ -22,39 +30,36 @@ body {
 #header {
   position: relative;
   margin-bottom: 40px;
+  min-height:300px;
+  background-image:url("../img/banner.jpg");
 }
  
 .sitetitle {
   position: absolute;
-  top: 6px;
-  left: 130px;
+  top: 20px;
+  left: 20px;
   font-size: 48px;
+  color:#FFF;
 }
  
 .siteslogan {
   position: absolute;
-  top: 65px;
-  left: 130px;
+  top: 80px;
+  left:20px;
   font-style: italic;
-  color: #666;
+  color: #FFF;
 }
- 
-/* layout for navigation
-*/
 
-#menuList x li {
-	font-family: calibri, arial;
-	font-size: 16px;
-	font-weight: bold;
-	color: #FFFFFF;
+ 
+#menu li {
 	text-decoration: none;
 	display: block;
+	height: 40px;
+	width: 100px;
+	float: left;
 	text-align: center;
-	line-height: 40px;
-	background-image:url(images/ro.jpg);
-	background-repeat:no-repeat;
-	background-position:top;
-}
+	line-height: 38px;
+} 
  
 /**
  * Layout for main
@@ -63,6 +68,17 @@ body {
   min-height: 20em;
 }
  
+#textblock {
+	float:left;
+	width:490px;
+}
+ 
+#imgMe {
+	float:right;
+	width:300px;
+	clear:none;
+	padding-left:10px;
+} 
  
 /**
  * Layout for footer
@@ -71,6 +87,7 @@ body {
   margin-top: 40px;
   border-top: 1px solid #ccc;
   padding-top: 15px;
+  clear:both;
 }
  
 .sitefooter {

@@ -3,7 +3,7 @@
 $pages = array(
     'index.php' => 'Me-sida',
     'assignment.php' => 'Redovisning',
-    'source.php' => 'Source',
+    '../source.php' => 'Source',
 
 ) ;
 
